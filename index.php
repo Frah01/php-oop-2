@@ -61,7 +61,7 @@ include __DIR__ . '/database.php';
                     <div class="card">
                         <img src="<?php echo $giocattoli->image ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $accessori->name ?></h5>
+                            <h5 class="card-title"><?php echo $giocattoli->name ?></h5>
                             <p class="card-text"><?php echo $giocattoli->type ?></p>
                             <p class="card-text"><?php echo $giocattoli->price ?></p>
                             <p class="card-text"><?php echo $giocattoli->specifics ?></p>
