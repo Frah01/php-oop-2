@@ -12,9 +12,3 @@ class Giocattoli extends Prodotti
         $this->size = $size;
     }
 }
-
-echo "<pre>";
-$giocattolo1 = new Giocattoli('immagine', 'nome', 'tipo', 'prezzo', 'peso', 'ingredienti');
-$giocattolo2 = new Giocattoli('immagine2', 'nome2', 'tipo2', 'prezzo2', 'peso2', 'ingredienti2');
-var_dump($giocattolo1);
-var_dump($giocattolo2);
