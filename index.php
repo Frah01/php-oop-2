@@ -1,6 +1,11 @@
 <?php
 
 include __DIR__ . '/database.php';
+echo "<pre>";
+$product = new Cibo('immagine', 'nome', 'tipo', 'prezzo', 'peso', 'ingredienti');
+$product2 = new Cibo('immagine2', 'nome2', 'tipo2', 'prezzo2', 'peso2', 'ingredienti2');
+var_dump($product);
+var_dump($product2);
 
 ?>
 
@@ -17,7 +22,13 @@ include __DIR__ . '/database.php';
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
 
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

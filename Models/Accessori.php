@@ -1,21 +1,15 @@
 <?php
 
-class Accessori
+class Accessori extends Prodotti
 {
-    public $image;
-    public $name;
-    public $type;
-    public $price;
-    public $specifics;
+
+    public $material;
     public $size;
 
-    public function __construct($image, $name, $type, $price, $specifics, $size)
+    public function __construct($image, $name, $type, $price, $material, $size)
     {
-        $this->image = $image;
-        $this->name = $name;
-        $this->type = $type;
-        $this->price = $price;
-        $this->specifics = $specifics;
+        parent::__construct($image, $name, $type, $price);
+        $this->material = $material;
         $this->size = $size;
     }
 }

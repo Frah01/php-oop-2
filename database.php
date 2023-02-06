@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-    include __DIR__ . '/cani.php';
-    include __DIR__ . '/gatti.php';
-    include __DIR__ . '/pesci.php';
-    include __DIR__ . '/uccelli.php';
+include __DIR__ . '/Models/Giocattoli.php';
+include __DIR__ . '/Models/Accessori.php';
+include __DIR__ . '/Models/Prodotti.php';
+include __DIR__ . '/Models/Cibo.php';

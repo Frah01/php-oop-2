@@ -1,20 +1,20 @@
 <?php
-class Cibo
+class Cibo extends Prodotti
 {
-    public $image;
-    public $name;
-    public $type;
-    public $price;
+
     public $weight;
     public $ingredients;
 
     public function __construct($image, $name, $type, $price, $weight, $ingredients)
     {
-        $this->image = $image;
-        $this->name = $name;
-        $this->type = $type;
-        $this->price = $price;
+        parent::__construct($image, $name, $type, $price);
         $this->weight = $weight;
-        $this->ingredients = $ingredients;
+        $this->$ingredients = $ingredients;
     }
 }
+
+echo "<pre>";
+$product = new Cibo('immagine', 'nome', 'tipo', 'prezzo', 'peso', 'ingredienti');
+$product2 = new Cibo('immagine2', 'nome2', 'tipo2', 'prezzo2', 'peso2', 'ingredienti2');
+var_dump($product);
+var_dump($product2);
