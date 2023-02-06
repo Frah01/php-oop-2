@@ -20,7 +20,7 @@ include __DIR__ . '/database.php';
     <div class="container">
         <div class="row">
             <?php foreach ($cibi_array as $cibi) { ?>
-                <div class="col-4 mt-2">
+                <div class="col-4 my-2">
                     <div class="card">
                         <img src="<?php echo $cibi->image ?>" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -34,7 +34,7 @@ include __DIR__ . '/database.php';
                 </div>
             <?php } ?>
             <?php foreach ($accessori_array as $accessori) { ?>
-                <div class="col-4 mt-2">
+                <div class="col-4 my-2">
                     <div class="card">
                         <img src="<?php echo $accessori->image ?>" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -48,7 +48,7 @@ include __DIR__ . '/database.php';
                 </div>
             <?php } ?>
             <?php foreach ($giocattoli_array as $giocattoli) { ?>
-                <div class="col-4 mt-2">
+                <div class="col-4 my-2">
                     <div class="card">
                         <img src="<?php echo $giocattoli->image ?>" class="card-img-top" alt="...">
                         <div class="card-body">
