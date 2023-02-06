@@ -1,18 +1,6 @@
 <?php
 
 include __DIR__ . '/database.php';
-echo "<pre>";
-$cibo1 = new Cibo('https://picsum.photos/200', 'Royal Canin Mini Adult', 'Cane', 'Prezzo:€ 43,99', 'Peso netto: 545g', 'Ingredienti: prosciutto, riso');
-$cibo2 = new Cibo('https://picsum.photos/200', 'Almo Nature Holistic Maintenance Medium Large Tonno e Riso', 'Cane', 'Prezzo: €44,99', 'Peso netto: 600g', 'Ingredienti: manzo, cereali');
-$cibo3 = new Cibo('https://picsum.photos/200', 'Almo Nature Cat Daily Lattina', 'Gatto', 'Prezzo: €34,99', 'Peso netto: 400g', 'Ingredienti: tonno, pollo, prosciutoo');
-$cibo4 = new Cibo('https://picsum.photos/200', 'Mangime per Pesci Guppy in Fiocchi', 'Pesce', 'Prezzo: €2,95', 'Peso netto: 30g', 'Ingredienti: Pesi e sottoprodotti dei pesci, Cereali, Lieviti, Alghe');
-
-$cibi_array = [
-    $cibo1,
-    $cibo2,
-    $cibo3,
-    $cibo4
-]
 
 ?>
 
@@ -32,19 +20,47 @@ $cibi_array = [
     <div class="container">
         <div class="row">
             <?php foreach ($cibi_array as $cibi) { ?>
-                <div class="col-6">
+                <div class="col-4 mt-2">
                     <div class="card">
                         <img src="<?php echo $cibi->image ?>" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $cibi->name ?></h5>
                             <p class="card-text"><?php echo $cibi->type ?></p>
+                            <p class="card-text"><?php echo $cibi->price ?></p>
                             <p class="card-text"><?php echo $cibi->weight ?></p>
                             <p class="card-text"><?php echo $cibi->ingredients ?></p>
                         </div>
                     </div>
                 </div>
             <?php } ?>
-
+            <?php foreach ($accessori_array as $accessori) { ?>
+                <div class="col-4 mt-2">
+                    <div class="card">
+                        <img src="<?php echo $accessori->image ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $accessori->name ?></h5>
+                            <p class="card-text"><?php echo $accessori->type ?></p>
+                            <p class="card-text"><?php echo $accessori->price ?></p>
+                            <p class="card-text"><?php echo $accessori->material ?></p>
+                            <p class="card-text"><?php echo $accessori->size ?></p>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+            <?php foreach ($giocattoli_array as $giocattoli) { ?>
+                <div class="col-4 mt-2">
+                    <div class="card">
+                        <img src="<?php echo $giocattoli->image ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $accessori->name ?></h5>
+                            <p class="card-text"><?php echo $giocattoli->type ?></p>
+                            <p class="card-text"><?php echo $giocattoli->price ?></p>
+                            <p class="card-text"><?php echo $giocattoli->specifics ?></p>
+                            <p class="card-text"><?php echo $giocattoli->size ?></p>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
         </div>
     </div>
 </body>
