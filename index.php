@@ -19,6 +19,9 @@ include __DIR__ . '/database.php';
 <body>
     <div class="container">
         <div class="row">
+
+            <!-- CREO IL CICLO PER LA SEZIONE CIBO -->
+
             <?php foreach ($cibi_array as $cibi) { ?>
                 <div class="col-4 my-2">
                     <div class="card">
@@ -33,6 +36,9 @@ include __DIR__ . '/database.php';
                     </div>
                 </div>
             <?php } ?>
+
+            <!-- CREO IL CICLO PER LA SEZIONE ACCESSORI -->
+
             <?php foreach ($accessori_array as $accessori) { ?>
                 <div class="col-4 my-2">
                     <div class="card">
@@ -47,6 +53,9 @@ include __DIR__ . '/database.php';
                     </div>
                 </div>
             <?php } ?>
+
+            <!-- CREO IL CICLO PER LA SEZIONE GIOCATTOLI -->
+
             <?php foreach ($giocattoli_array as $giocattoli) { ?>
                 <div class="col-4 my-2">
                     <div class="card">
